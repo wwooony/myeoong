@@ -97,7 +97,7 @@ body{
 </body>
 <script>
 const year = new Date().getFullYear();
-const myDate = new Date('april 17, 2020 00:00:00');
+const myDate = new Date('april 18, 2020 00:00:00');
 console.log(myDate);
 
 // countdown
@@ -110,10 +110,10 @@ let timer = setInterval(function() {
   const diff = myDate - today;
 
   // math
-  let days = Math.floor(diff / (1000 * 60 * 60 * 24 )*-1);
+  let days = Math.floor(diff / (1000 * 60 * 60 * 24 )*);
   let hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60) *-1);
   let minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60)*-1);
-  let seconds = Math.floor((diff % (1000 * 60)) / 1000)*-1;
+  let seconds = Math.floor((diff % (1000 * 60)) / 1000)*-2;
   
 
   // display
